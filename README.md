@@ -9,8 +9,8 @@ Welcome to **MUNAKOLAB** — the personal portfolio and research lab of **Techno
 
 ## 🌐 Live Site
 
-> [Visit MUNAKOLAB →](https://yourdomain.com)  
-*(Replace with your deployed site link)*
+> [Visit MUNAKOLAB →](https://technologist0366.github.io/portfolio/))  
+
 
 ---
 
