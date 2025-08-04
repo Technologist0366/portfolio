@@ -153,7 +153,7 @@
 
         .content h1 {
             font-size: clamp(1.8rem, 4.5vw, 2.4rem);
-            color: #551344;
+            color: #d1554c;
             font-weight: 700;
             letter-spacing: 0.05rem;
             margin-bottom: 1.2rem;
@@ -179,7 +179,7 @@
 
         /* Highlighted headings for Expertise and Cyber Frameworks */
         .expertise-heading, .frameworks-heading {
-             color: #FFC107;
+             color: #c44379;
             font-weight: 600;
             font-size: clamp(1rem, 1.9vw, 1.1rem);
             margin-bottom: 0.5rem;
@@ -289,41 +289,50 @@
             transform: scale(1.05);
         }
 
-        /* Blog and contact sections with clean design */
-        .contact-info, .blog-posts {
-            max-width: 750px;
-            margin: 2rem 0;
-            width: 100%;
-        }
+       /* Container for blog posts as a 2-column grid */
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem 2rem; /* vertical gap 1.5rem, horizontal gap 2rem */
+    max-width: 750px;
+    margin: 2rem 0;
+    width: 100%;
+}
 
-        .blog-post {
-            background: rgba(255, 255, 255, 0.98);
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin: 1.2rem 0;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-            border: 1px solid #e0e6ed;
-            color: #1a1a1a;
-        }
+/* Individual blog post card */
+.blog-post {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 1.5rem;
+    border-radius: 10px;
+    /* Remove vertical margin since gap is handled by grid */
+    /* margin: 1.2rem 0; */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border: 1px solid #e0e6ed;
+    color: #1a1a1a;
+}
 
-        .blog-post:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
-        }
+/* Hover effect to lift the card */
+.blog-post:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 6px 20px rgba(52, 152, 219, 0.2);
+}
 
-        .blog-post h3 {
-            color: #3498db;
-            font-size: clamp(1rem, 1.9vw, 1.2rem);
-            font-weight: 600;
-            margin-bottom: 0.6rem;
-        }
+/* Blog post title */
+.blog-post h3 {
+    color: #3498db;
+    font-size: clamp(1rem, 1.9vw, 1.2rem);
+    font-weight: 600;
+    margin-bottom: 0.6rem;
+}
 
-        .blog-post p {
-            font-size: clamp(0.85rem, 1.7vw, 0.9rem);
-            margin-bottom: 1rem;
-            color: #f39c12;
-        }
+/* Blog post summary text */
+.blog-post p {
+    font-size: clamp(0.85rem, 1.7vw, 0.9rem);
+    margin-bottom: 1rem;
+    color: #f39c12;
+}
+
 
         /* Animations */
         @keyframes waveShift {
@@ -396,7 +405,7 @@
     <!-- Main content with richer professional background -->
     <div class="content">
         <section id="home">
-            <h1>Technologist036's [[[MUNAKOLABS]]]</h1>
+            <h1>Technologist036 [[[MUNAKOLABS]]]</h1>
             <p>
                 <span style="color: #000000;">In a world where cybersecurity threats from China, Russia, Ukraine, Korea, Europe, and America are escalating, we cannot wait for the Earth-Trisolaris Organization to bring about Judgment Day. As survivors, we must be ready. Cybersecurity is more crucial than ever—join me in fortifying the digital frontier.</span>
             </p>
@@ -445,25 +454,44 @@
         </section>
 
         <section id="blogs">
-            <h2>Blog</h2>
-            <div class="blog-posts">
-                <div class="blog-post">
-                    <h3>An Introduction to Assembly Language</h3>
-                    <p><span style="color: #2812f3;">Assembly is a low-level programming language for CPU-direct instructions.</span></p>
-                    <a href="https://medium.com/@Technologist036/an-introduction-to-assembly-language-303333110980" target="_blank">Read More</a>
-                </div>
-                <div class="blog-post">
-                    <h3>Building and Breaking a TCP Chat Application</h3>
-                    <p><span style="color: #2812f3;">A step-by-step guide to building a TCP chat app using Rust and Node.js.</span></p>
-                    <a href="https://medium.com/@Technologist036/building-and-breaking-a-tcp-chat-application-a-step-by-step-guide-to-rust-node-js-1e81877e777c" target="_blank">Read More</a>
-                </div>
-                <div class="blog-post">
-                    <h3>Deep Dive To Red Teaming (Introduction)</h3>
-                    <p><span style="color: #2812f3;">An introduction to red teaming techniques for cybersecurity.</span></p>
-                    <a href="https://medium.com/@Technologist036/deep-dive-to-red-teaming-introduction-e0629723e701" target="_blank">Read More</a>
-                </div>
-            </div>
-        </section>
+    <h2>Blog</h2>
+    <div class="blog-posts">
+        <div class="blog-post">
+            <h3>An Introduction to Assembly Language</h3>
+            <p><span style="color: #2812f3;">Assembly is a low-level programming language for CPU-direct instructions.</span></p>
+            <a href="https://medium.com/@Technologist036/an-introduction-to-assembly-language-303333110980" target="_blank">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Building and Breaking a TCP Chat Application</h3>
+            <p><span style="color: #2812f3;">A step-by-step guide to building a TCP chat app using Rust and Node.js.</span></p>
+            <a href="https://medium.com/@Technologist036/building-and-breaking-a-tcp-chat-application-a-step-by-step-guide-to-rust-node-js-1e81877e777c" target="_blank">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Deep Dive To Red Teaming (Introduction)</h3>
+            <p><span style="color: #2812f3;">An introduction to red teaming techniques for cybersecurity.</span></p>
+            <a href="https://medium.com/@Technologist036/deep-dive-to-red-teaming-introduction-e0629723e701" target="_blank">Read More</a>
+        </div>
+
+        <!-- Replaced these with your latest blogs -->
+        <div class="blog-post">
+            <h3>Simple Python Keylogger Hacktrick: Part 1</h3>
+            <p><span style="color: #2812f3;">Keyloggers capture keystrokes — a deep dive into a Python keylogger example.</span></p>
+            <a href="https://medium.com/@Technologist036/simple-python-keylogger-hacktrick-part-1-88846488d34a" target="_blank">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Turbo Intruder: Burp Suite Extension</h3>
+            <p><span style="color: #2812f3;">Introduction to Turbo Intruder for advanced web testing in Burp Suite.</span></p>
+            <a href="https://medium.com/@Technologist036/turbo-intruder-burp-suite-extension-7af2fe45eb02" target="_blank">Read More</a>
+        </div>
+        <div class="blog-post">
+            <h3>Understanding Distributed Denial of Service (DDoS)</h3>
+            <p><span style="color: #2812f3;">Overview of the threat landscape and mechanisms behind DDoS attacks.</span></p>
+            <a href="https://medium.com/@Technologist036/understanding-distributed-denial-of-service-ddos-90909b9e14b3" target="_blank">Read More</a>
+        </div>
+    </div>
+</section>
+
+
 
        <section id="spotify">
          <h2>Spotify</h2>
