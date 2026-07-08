@@ -1,113 +1,81 @@
-# portfolio
-# 🔐 Technologist036's MUNAKOLAB
+# Waithaka Munako
 
-Welcome to **MUNAKOLAB** — the personal portfolio and research lab of **Technologist036**, a Kenyan-born cybersecurity researcher, red teamer, and embedded systems innovator. This platform showcases my projects, technical writings, tools, and a curated blend of tech and culture.
-
-> *"In a world where cybersecurity threats from China, Russia, Ukraine, Korea, Europe, and America are escalating, we cannot wait for the Earth-Trisolaris Organization to bring about Judgment Day. As survivors, we must be ready."*
+Healthcare Technology Architect · CTO @ Povacare · Security Researcher
 
 ---
 
-## 🌐 Live Site
+## About
 
-> [Visit MUNAKOLAB →](https://technologist0366.github.io/portfolio/))  
+Healthcare Technology Architect and Security Researcher with an electrical engineering background. Building EMR software, embedded systems, and secure communication solutions.
 
+CTO at **Povacare** — Electronic Medical Records software for modern healthcare. Lead **ESPDev** at AIXPart.com — embedded systems for IoT, security, and medical devices.
 
----
-
-## 🧠 About Me
-
-I’m a devoted **security researcher** with an **electrical engineering** background, driven by the latest trends in **cybersecurity, AI, blockchain**, and **embedded systems**.
-
-Raised in rural Kenya, I self-taught my way into offensive security, building tools like **AuditNex** (compliance automation) and **ESP32 Div** (IoT pentesting tool). My goal is to innovate in the defense of digital frontiers.
-
-### 🔍 Focus Areas:
-- Cybersecurity Compliance (CMMC, NIST, ISO, HIPAA, PCI-DSS, FedRAMP)
-- Network Penetration Testing & Red Teaming
-- Embedded Systems & IoT Security
-- Blockchain and AI Integration
-- Software Development (Python, Rust, Node.js)
-- Compliance Automation (AuditNex)
+Raised in rural Kenya, self-taught into software engineering and cybersecurity.
 
 ---
 
-## 🛠️ Skills
+## Focus Areas
 
-- 📜 Compliance: NIST 800-53, CMMC, ISO 27001, HIPAA, FedRAMP
-- 🛡️ Red Teaming & Offensive Security
-- ⚙️ Embedded Systems & IoT (ESP32, Assembly)
-- 🧪 Programming: Python, Rust, Node.js, Bash
-- 🧱 Blockchain Dev & AI Integration
-- 📦 DevOps: Docker, CI/CD pipelines
-- 🧬 Assembly & Low-Level Systems Programming
-
----
-
-## 🧪 Projects
-
-### ⚙️ AuditNex  
-> *Simplify Compliance & Empower Every Part of Your Business*  
-A platform to automate audits, enforce policies, and unify compliance frameworks under one intelligent dashboard.
-
-**Status:** _Coming Soon_
+- EMR Software Development
+- Healthcare Technology
+- Software Architecture
+- Cybersecurity Compliance (NIST, ISO, HIPAA, CMMC)
+- Red Teaming & Penetration Testing
+- Embedded Systems & IoT
+- Splunk · 3D Slicer · Blockchain · AI
 
 ---
 
-### 📡 ESP32 Div  
-> *A network penetration testing tool built with ESP32 for IoT security research.*  
-Includes Wi-Fi attack modules, packet sniffing, and red teaming integration for embedded environments.
+## Skills
 
-**Status:** _Coming Soon_
+EMR Software · Splunk · 3D Slicer · ESP32 · NIST 800-53 · CMMC · ISO 27001 · HIPAA · Red Teaming · Python · Rust · Node.js · Embedded Systems · Blockchain · AI · Docker · CI/CD · Ham Radio · Antennas
 
 ---
 
-## 📝 Blog
+## Projects
 
-- 📄 [An Introduction to Assembly Language](#)  
-- 💬 [Building and Breaking a TCP Chat Application (Rust + Node.js)](#)  
-- 🔍 [Deep Dive into Red Teaming — Part 1](#)
+**Povacare** — EMR platform with HIPAA compliance and secure architecture. Serving 500+ patients.  
+→ [povacare.co.uk](https://povacare.co.uk/)
 
----
+**ESPDev @ AIXPart** — ESP32-based development for IoT security and medical devices. Built with Rust and C.  
+→ [aixpart.com](https://aixpart.com/)
 
-## 🎧 Spotify Playlist
+**AuditNex** — Compliance automation unifying CMMC, NIST, ISO, and HIPAA frameworks. (Coming Soon)
 
-Explore my tech-themed soundscapes:  
-🎵 [Listen on Spotify](https://spotify.com)
-
----
-
-## 📚 Tech Bookshelf
-
-A curated collection of books on cybersecurity, red teaming, and low-level programming.  
-📘 [View on Google Drive](https://drive.google.com)
+**ESP32 Div** — Network penetration testing tool for IoT security research. (Coming Soon)
 
 ---
 
-## 📫 Contact Me
+## Contact
 
-- 📧 **Email:** joseph.waithaka21@students.dkut.ac.ke  
-- 🐙 **GitHub:** [Technologist0366](https://github.com/Technologist0366)  
-- 💼 **Fiverr:** [jalicemwangi](https://fiverr.com/jalicemwangi)  
-- 🐦 **Twitter/X:** [@Technologist36](https://x.com/Technologist36)  
-- ✍️ **Medium:** [@Technologist036](https://medium.com/@Technologist036)
-
----
-
-## 🚀 Deployment & Tech Stack
-
-| Category     | Tech Used                  |
-|--------------|-----------------------------|
-| Frontend     | HTML/CSS/JS or React        |
-| Styling      | Tailwind CSS or Bootstrap   |
-| Hosting      | GitHub Pages / Vercel       |
-| Blog         | Static markdown or Medium   |
-| Music Embed  | Spotify Widget              |
+- Email: joseph.waithaka21@students.dkut.ac.ke
+- GitHub: [Technologist0366](https://github.com/Technologist0366)
+- LinkedIn: [mehitlabs](https://www.linkedin.com/in/mehitlabs/)
+- Twitter/X: [@technologist36](https://x.com/technologist36)
+- Medium: [@Technologist036](https://medium.com/@Technologist036)
+- Fiverr: [jalicemwangi](https://fiverr.com/jalicemwangi)
 
 ---
 
-## 📜 License
+## Tech Stack
 
-This project is licensed under the [MIT License](LICENSE).
+| Category     | Tech                          |
+|--------------|-------------------------------|
+| EMR          | Povacare                      |
+| Embedded     | ESP32, Rust, C                |
+| Analytics    | Splunk                        |
+| Imaging      | 3D Slicer                     |
+| Compliance   | NIST, ISO, HIPAA              |
+| Languages    | Python, Rust, Node.js         |
+| DevOps       | Docker, CI/CD                 |
+| Hardware     | Ham Radio, Antennas           |
 
 ---
 
-> **Technologist036** — *Cyberpunk. Compliance. Code. Kenya.*
+## License
+
+MIT
+
+---
+
+Waithaka Munako · Healthcare Tech · EMR · Security · Kenya
