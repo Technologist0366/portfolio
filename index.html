@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Waithaka Munako — Healthcare & Secure Communication Technologies</title>
+    <meta name="description" content="Waithaka Munako — Healthcare Technology Architect, CTO @ Povacare. Building secure apps, telecom networks, and medical platforms. HIPAA, CMMC, NIST, SOC 2, ISO 27001 compliance expert.">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <style>
@@ -109,7 +110,6 @@
             color: #fff;
         }
 
-        /* Subscribe button in navbar */
         .nav .btn-subscribe {
             background: #0A66C2;
             color: #fff;
@@ -149,7 +149,7 @@
         .hero {
             padding: 7rem 0 3rem;
             text-align: center;
-            max-width: 720px;
+            max-width: 760px;
             margin: 0 auto;
         }
 
@@ -221,6 +221,18 @@
         .profile-image .placeholder {
             font-size: 3rem;
             color: var(--text-muted);
+        }
+
+        .hero-description {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            max-width: 680px;
+            margin: 0 auto 1rem;
+            line-height: 1.8;
+        }
+
+        .hero-description strong {
+            color: var(--text);
         }
 
         .hero-quote {
@@ -310,13 +322,6 @@
             font-size: 1.1rem;
         }
 
-        .section-desc {
-            color: var(--text-secondary);
-            max-width: 640px;
-            margin-bottom: 1.2rem;
-            font-size: 0.92rem;
-        }
-
         /* ===== ABOUT ===== */
         .about-grid {
             display: grid;
@@ -344,7 +349,7 @@
             display: flex;
             align-items: flex-start;
             gap: 0.5rem;
-            padding: 0.3rem 0;
+            padding: 0.25rem 0;
             color: var(--text-secondary);
             font-size: 0.85rem;
         }
@@ -354,6 +359,32 @@
             font-size: 0.75rem;
             margin-top: 0.15rem;
             width: 1.1rem;
+        }
+
+        /* ===== SERVICES ===== */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.8rem;
+            margin-top: 0.5rem;
+        }
+
+        .service-tag {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            padding: 0.3rem 0.8rem;
+            border-radius: 6px;
+            font-size: 0.72rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        .service-tag:hover {
+            border-color: var(--primary);
+            color: var(--text);
+            background: rgba(37, 99, 235, 0.02);
         }
 
         /* ===== SKILLS ===== */
@@ -384,7 +415,7 @@
         /* ===== PROJECTS ===== */
         .project-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.2rem;
             margin-top: 0.3rem;
         }
@@ -421,12 +452,6 @@
             color: var(--green);
             background: rgba(5, 150, 105, 0.05);
             border-color: rgba(5, 150, 105, 0.06);
-        }
-
-        .project-card .tag.orange {
-            color: #d97706;
-            background: rgba(217, 119, 6, 0.05);
-            border-color: rgba(217, 119, 6, 0.06);
         }
 
         .project-card h3 {
@@ -612,21 +637,29 @@
                 left: 0;
                 right: 0;
                 background: #fff;
-                padding: 1rem;
+                padding: 1rem 1.2rem;
                 border-bottom: 1px solid var(--border);
                 gap: 0.6rem;
                 box-shadow: var(--shadow);
             }
             .menu-toggle { display: block; }
 
+            .nav.open .btn-subscribe {
+                width: 100%;
+                justify-content: center;
+                padding: 0.5rem 1.2rem;
+                margin-top: 0.2rem;
+            }
+
             .hero { padding: 5.5rem 0 2rem; }
             .hero h1 { font-size: 1.8rem; }
-            .hero-quote { font-size: 0.85rem; padding: 0.8rem 1.2rem; }
+            .hero-description { font-size: 0.88rem; }
 
             .about-grid { grid-template-columns: 1fr; gap: 1rem; }
             .project-grid { grid-template-columns: 1fr; }
             .blog-grid { grid-template-columns: 1fr; }
             .tech-grid { grid-template-columns: 1fr 1fr; }
+            .services-grid { grid-template-columns: 1fr 1fr; }
 
             section { padding: 2rem 0; }
             .container { padding: 0 1rem; }
@@ -636,6 +669,7 @@
             .hero h1 { font-size: 1.5rem; }
             .hero-sub { font-size: 0.9rem; }
             .tech-grid { grid-template-columns: 1fr; }
+            .services-grid { grid-template-columns: 1fr; }
             .hero-badges { gap: 0.3rem; }
             .hero-badge { font-size: 0.62rem; padding: 0.15rem 0.6rem; }
             .contact-grid { flex-direction: column; gap: 0.3rem; }
@@ -673,7 +707,6 @@
         <section class="hero">
             <span class="hero-tag">Healthcare & Secure Communication Technologies</span>
 
-            <!-- Profile Image -->
             <div class="profile-image">
                 <img src="./waithakamunako.jpeg" alt="Waithaka Munako" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                 <div class="placeholder" style="display:none;">
@@ -688,6 +721,10 @@
                 <i class="fas fa-microchip"></i> Embedded Systems ·
                 <i class="fas fa-shield-alt"></i> Cybersecurity
             </p>
+
+            <div class="hero-description">
+                <strong>Building secure healthcare platforms, telecom networks, and embedded systems</strong> — from EMR software and VoIP infrastructure to antenna design and Raspberry Pi solutions.
+            </div>
 
             <div class="hero-quote">
                 <strong>“The thing that we are trying to do at Facebook is just help people connect and communicate more efficiently.”</strong>
@@ -721,24 +758,45 @@
                 <div class="about-grid">
                     <div class="about-text">
                         <p>
-                            I'm a <strong>Healthcare Technology Architect</strong> and <strong>Security Researcher</strong> with an electrical engineering background, building <strong>EMR software</strong>, secure communication systems, and embedded solutions.
+                            I'm a <strong>Healthcare Technology Architect</strong>, <strong>Security Researcher</strong>, and <strong>Telecom Engineer</strong> with an electrical engineering background. I build <strong>EMR software</strong>, <strong>secure VoIP/telecom networks</strong>, and <strong>embedded systems</strong>.
                         </p>
                         <p>
-                            As CTO at <strong>Povacare</strong>, I architect Electronic Medical Records software for modern healthcare. At <strong>AIXPart.com</strong>, I lead ESPDev — embedded systems for IoT, security, and medical devices.
+                            As CTO at <strong>Povacare</strong>, I architect Electronic Medical Records software for modern healthcare. I also design <strong>antenna systems (Yagi-Uda)</strong>, work with <strong>OpenWRT</strong> for router firmware, and build <strong>Raspberry Pi</strong> solutions for IoT and security applications.
                         </p>
                         <p>
-                            Raised in rural Kenya, I self-taught my way into software engineering and cybersecurity, building tools like <strong>AuditNex</strong> (compliance automation) and <strong>ESP32 Div</strong> (IoT pentesting).
+                            I specialize in <strong>HIPAA, CMMC, NIST, SOC 2, ISO 27001, and PCI DSS</strong> compliance — building systems that pass audits stress-free.
                         </p>
                     </div>
                     <ul class="focus-list">
-                        <li><i class="fas fa-check"></i> EMR Software Development</li>
-                        <li><i class="fas fa-check"></i> Healthcare Technology</li>
-                        <li><i class="fas fa-check"></i> Software Architecture</li>
+                        <li><i class="fas fa-check"></i> EMR &amp; HealthTech</li>
+                        <li><i class="fas fa-check"></i> Secure VoIP (Kamailio, FreeSWITCH)</li>
+                        <li><i class="fas fa-check"></i> OpenWRT &amp; Router Firmware</li>
+                        <li><i class="fas fa-check"></i> Antenna Design (Yagi-Uda)</li>
+                        <li><i class="fas fa-check"></i> Raspberry Pi · Arduino</li>
                         <li><i class="fas fa-check"></i> Cybersecurity Compliance</li>
-                        <li><i class="fas fa-check"></i> Red Teaming &amp; Penetration Testing</li>
-                        <li><i class="fas fa-check"></i> Embedded Systems &amp; IoT</li>
-                        <li><i class="fas fa-check"></i> Splunk · 3D Slicer · Blockchain · AI</li>
+                        <li><i class="fas fa-check"></i> SOC Analyst &amp; Red Teaming</li>
+                        <li><i class="fas fa-check"></i> Splunk · Machine Learning · AWS</li>
                     </ul>
+                </div>
+            </section>
+
+            <!-- ===== SERVICES ===== -->
+            <section id="services">
+                <h2 class="section-title"><i class="fas fa-concierge-bell"></i> Services</h2>
+                <div class="services-grid">
+                    <span class="service-tag">✔ Compliance Audits (HIPAA, CMMC, NIST, SOC 2, ISO 27001, PCI DSS)</span>
+                    <span class="service-tag">✔ Secure App Development</span>
+                    <span class="service-tag">✔ Cloud Architecture (AWS)</span>
+                    <span class="service-tag">✔ DevSecOps</span>
+                    <span class="service-tag">✔ Hardened VoIP / FreeSWITCH / Kamailio</span>
+                    <span class="service-tag">✔ Telemedicine Apps</span>
+                    <span class="service-tag">✔ Cloud PACS &amp; Web DICOM Viewers</span>
+                    <span class="service-tag">✔ EMR Integration</span>
+                    <span class="service-tag">✔ Secure Voice, Video &amp; WebRTC</span>
+                    <span class="service-tag">✔ OpenWRT Firmware &amp; Router Security</span>
+                    <span class="service-tag">✔ Antenna Design (Yagi-Uda)</span>
+                    <span class="service-tag">✔ Raspberry Pi · Arduino Solutions</span>
+                    <span class="service-tag">✔ ISO 45001 · ISO 22000 · ISO 9001</span>
                 </div>
             </section>
 
@@ -746,18 +804,38 @@
             <section id="skills">
                 <h2 class="section-title"><i class="fas fa-tools"></i> Skills</h2>
                 <div class="skills-grid">
-                    <span class="skill-tag">EMR Software</span>
+                    <span class="skill-tag">HIPAA</span>
+                    <span class="skill-tag">CMMC</span>
+                    <span class="skill-tag">NIST 800-53</span>
+                    <span class="skill-tag">SOC 2</span>
+                    <span class="skill-tag">ISO 27001</span>
+                    <span class="skill-tag">PCI DSS</span>
+                    <span class="skill-tag">ISO 45001</span>
+                    <span class="skill-tag">ISO 22000</span>
+                    <span class="skill-tag">ISO 9001</span>
+                    <span class="skill-tag">Kamailio</span>
+                    <span class="skill-tag">FreeSWITCH</span>
+                    <span class="skill-tag">FreePBX</span>
+                    <span class="skill-tag">OpenWRT</span>
+                    <span class="skill-tag">Yagi-Uda Antenna</span>
+                    <span class="skill-tag">Raspberry Pi</span>
+                    <span class="skill-tag">Arduino</span>
                     <span class="skill-tag">Splunk</span>
-                    <span class="skill-tag">3D Slicer</span>
-                    <span class="skill-tag">ESP32 / ESPDev</span>
-                    <span class="skill-tag">NIST 800-53 · CMMC</span>
-                    <span class="skill-tag">ISO 27001 · HIPAA</span>
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">SOC Analyst</span>
                     <span class="skill-tag">Red Teaming</span>
-                    <span class="skill-tag">Python · Rust · Node.js</span>
-                    <span class="skill-tag">Embedded Systems</span>
-                    <span class="skill-tag">Blockchain · AI</span>
-                    <span class="skill-tag">Docker · CI/CD</span>
-                    <span class="skill-tag">Ham Radio · Antennas</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Rust</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">React Native</span>
+                    <span class="skill-tag">Back-end Development</span>
+                    <span class="skill-tag">AWS Cloud</span>
+                    <span class="skill-tag">KiCAD</span>
+                    <span class="skill-tag">EasyEDA</span>
+                    <span class="skill-tag">Eagle</span>
+                    <span class="skill-tag">Fritzing</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">CI/CD</span>
                 </div>
             </section>
 
@@ -775,24 +853,37 @@
                     </div>
 
                     <div class="project-card">
-                        <span class="tag">Embedded Systems</span>
-                        <h3>ESPDev @ AIXPart</h3>
-                        <p>ESP32-based development for IoT security, medical devices, and secure communication systems. Built with Rust and C.</p>
+                        <span class="tag">Telecom</span>
+                        <h3>Secure VoIP Platform</h3>
+                        <p>Hardened VoIP infrastructure with Kamailio, FreeSWITCH, and FreePBX. Secure voice, video, and WebRTC systems.</p>
                         <span class="status dev">● In Development</span>
-                        <a href="https://aixpart.com/" target="_blank" class="link">Visit →</a>
                     </div>
 
                     <div class="project-card">
-                        <span class="tag orange">GRC Platform</span>
-                        <h3>AuditNex</h3>
-                        <p>Compliance automation platform unifying CMMC, NIST, ISO, and HIPAA frameworks under one intelligent dashboard.</p>
+                        <span class="tag">Embedded</span>
+                        <h3>OpenWRT Router Security</h3>
+                        <p>Custom OpenWRT firmware with enhanced security features, VPN integration, and network monitoring.</p>
+                        <span class="status dev">● In Development</span>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="tag">RF Engineering</span>
+                        <h3>Yagi-Uda Antenna Design</h3>
+                        <p>High-gain directional antenna design for ham radio and communication systems. Built with CAD and simulation tools.</p>
                         <span class="status soon">● Coming Soon</span>
                     </div>
 
                     <div class="project-card">
-                        <span class="tag orange">IoT Security</span>
-                        <h3>ESP32 Div</h3>
-                        <p>Network penetration testing tool for IoT security research with Wi-Fi attack modules and red teaming integration.</p>
+                        <span class="tag">HealthTech</span>
+                        <h3>Cloud PACS &amp; DICOM Viewer</h3>
+                        <p>Web-based DICOM viewer and Cloud PACS for medical imaging. Built with React and Node.js.</p>
+                        <span class="status soon">● Coming Soon</span>
+                    </div>
+
+                    <div class="project-card">
+                        <span class="tag">IoT</span>
+                        <h3>Raspberry Pi Security Hub</h3>
+                        <p>Raspberry Pi-based security monitoring system with network scanning, intrusion detection, and alerting.</p>
                         <span class="status soon">● Coming Soon</span>
                     </div>
 
@@ -823,6 +914,16 @@
                         <p>Deep dive into a Python keylogger example.</p>
                         <a href="https://medium.com/@Technologist036/simple-python-keylogger-hacktrick-part-1-88846488d34a" target="_blank">Read →</a>
                     </div>
+                    <div class="blog-card">
+                        <h4>Securing VoIP with Kamailio &amp; FreeSWITCH</h4>
+                        <p>Best practices for hardening VoIP infrastructure.</p>
+                        <a href="https://medium.com/@Technologist036" target="_blank">Read →</a>
+                    </div>
+                    <div class="blog-card">
+                        <h4>Building with OpenWRT: Custom Firmware</h4>
+                        <p>How to build and deploy custom OpenWRT firmware for router security.</p>
+                        <a href="https://medium.com/@Technologist036" target="_blank">Read →</a>
+                    </div>
                 </div>
             </section>
 
@@ -831,13 +932,14 @@
                 <h2 class="section-title"><i class="fas fa-layer-group"></i> Tech Stack</h2>
                 <div class="tech-grid">
                     <div class="tech-item"><span>EMR</span> <span class="value">Povacare</span></div>
-                    <div class="tech-item"><span>Embedded</span> <span class="value">ESP32, Rust, C</span></div>
+                    <div class="tech-item"><span>Telecom</span> <span class="value">Kamailio, FreeSWITCH, FreePBX</span></div>
+                    <div class="tech-item"><span>Embedded</span> <span class="value">Raspberry Pi, Arduino, OpenWRT</span></div>
+                    <div class="tech-item"><span>RF</span> <span class="value">Yagi-Uda Antenna, Ham Radio</span></div>
                     <div class="tech-item"><span>Analytics</span> <span class="value">Splunk</span></div>
-                    <div class="tech-item"><span>Imaging</span> <span class="value">3D Slicer</span></div>
-                    <div class="tech-item"><span>Compliance</span> <span class="value">NIST, ISO, HIPAA</span></div>
+                    <div class="tech-item"><span>Compliance</span> <span class="value">HIPAA, CMMC, NIST, SOC 2, ISO</span></div>
                     <div class="tech-item"><span>Languages</span> <span class="value">Python, Rust, Node.js</span></div>
-                    <div class="tech-item"><span>DevOps</span> <span class="value">Docker, CI/CD</span></div>
-                    <div class="tech-item"><span>Hardware</span> <span class="value">Ham Radio, Antennas</span></div>
+                    <div class="tech-item"><span>Cloud</span> <span class="value">AWS</span></div>
+                    <div class="tech-item"><span>PCB</span> <span class="value">KiCAD, EasyEDA, Eagle, Fritzing</span></div>
                 </div>
             </section>
 
@@ -858,7 +960,7 @@
 
         <!-- ===== FOOTER ===== -->
         <footer class="footer container">
-            <p>© 2026 Waithaka Munako · <span>Waithaka Munako — Healthcare & Secure Communication Technologies</span> · Kenya</p>
+            <p>© 2026 Waithaka Munako · <span>Healthcare & Secure Communication Technologies</span> · Kenya</p>
         </footer>
 
     </main>
