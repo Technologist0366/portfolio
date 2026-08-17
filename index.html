@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Waithaka Munako — Healthcare · DICOM · Medical IoT</title>
-  <meta name="description" content="Waithaka Munako — CTO @ Povacare. Healthcare architect focused on EMR, DICOM/PACS, medical IoT, and secure clinical systems.">
+  <title>Waithaka Munako — Healthcare · Solar · DICOM · EMR</title>
+  <meta name="description" content="Waithaka Munako — CTO @ Povacare. Healthcare architect specializing in EMR, DICOM/PACS, medical IoT, solar energy systems, and HIPAA/ISO compliance.">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
   <style>
@@ -17,6 +17,8 @@
       --text-muted: #5a6f85;
       --primary: #0d6efd;
       --primary-dark: #0a58ca;
+      --green: #0f7b3a;
+      --solar: #f59e0b;
       --border: #dde3ed;
       --shadow-hover: 0 8px 28px rgba(13,110,253,0.10);
       --radius: 14px;
@@ -98,6 +100,7 @@
       margin-bottom: 1.5rem;
     }
     .hero-org i { color: var(--primary); margin: 0 0.3rem; }
+    .hero-org .fa-solar-panel { color: var(--solar); }
 
     .profile-image {
       width: 160px; height: 160px; border-radius: 50%;
@@ -163,6 +166,7 @@
       margin-bottom: 1.5rem;
     }
     .section-title i { color: var(--primary); margin-right: 0.7rem; font-size: 1.8rem; }
+    .section-title .solar-icon { color: var(--solar); }
 
     .about-grid {
       display: grid; grid-template-columns: 1.6fr 1fr;
@@ -186,6 +190,7 @@
       color: var(--primary); font-size: 1rem;
       margin-top: 0.2rem; width: 1.4rem;
     }
+    .focus-list li .fa-solar-panel { color: var(--solar); }
 
     .services-grid {
       display: flex; flex-wrap: wrap; gap: 0.8rem;
@@ -202,6 +207,8 @@
       border-color: var(--primary); color: var(--text);
       transform: translateY(-2px);
     }
+    .service-tag.solar-tag { border-left: 4px solid var(--solar); }
+    .service-tag.health-tag { border-left: 4px solid var(--primary); }
 
     .skills-grid {
       display: flex; flex-wrap: wrap; gap: 0.7rem;
@@ -218,6 +225,8 @@
       border-color: var(--primary); color: var(--text);
       transform: translateY(-2px);
     }
+    .skill-tag.solar-skill { border-color: var(--solar); color: var(--solar); }
+    .skill-tag.solar-skill:hover { background: rgba(245,158,11,0.06); }
 
     .project-grid {
       display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
@@ -244,6 +253,7 @@
       margin-bottom: 0.5rem;
     }
     .project-card .tag.green { color: #059669; background: rgba(5,150,105,0.06); border-color: rgba(5,150,105,0.06); }
+    .project-card .tag.solar-tag { color: var(--solar); background: rgba(245,158,11,0.06); border-color: rgba(245,158,11,0.06); }
     .project-card .tag.iot { color: #b45309; background: rgba(180,83,9,0.06); border-color: rgba(180,83,9,0.06); }
     .project-card h3 {
       font-size: 1.4rem; font-weight: 700; margin-bottom: 0.4rem;
@@ -306,7 +316,6 @@
     }
     .footer span { color: var(--primary); font-weight: 600; }
 
-    /* responsive */
     @media (max-width: 768px) {
       body { font-size: 1rem; }
       .header-inner { padding: 0 1.2rem; }
@@ -389,24 +398,24 @@
 
 <main>
   <section class="hero">
-    <span class="hero-tag">Healthcare · DICOM · Medical IoT</span>
+    <span class="hero-tag">Healthcare · Solar · DICOM · EMR</span>
     <div class="profile-image">
       <img src="./waithakamunako.jpeg" alt="Waithaka Munako" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
       <div class="placeholder" style="display:none;"><i class="fas fa-user-circle"></i></div>
     </div>
     <h1>Waithaka <span>Munako</span></h1>
-    <p class="hero-sub">CTO @ Povacare · aixpart.com</p>
+    <p class="hero-sub">CTO @ Povacare</p>
     <p class="hero-org">
-      <i class="fas fa-heartbeat"></i> EMR Software ·
-      <i class="fas fa-x-ray"></i> DICOM &amp; PACS ·
+      <i class="fas fa-heartbeat"></i> EMR · DICOM · PACS ·
+      <i class="fas fa-solar-panel"></i> Solar Energy ·
       <i class="fas fa-microchip"></i> Medical IoT
     </p>
     <div class="hero-description">
-      <strong>Designing secure healthcare platforms, imaging systems (DICOM), and connected medical devices</strong> — from EMR and cloud PACS to embedded sensors and clinical IoT.
+      <strong>Building secure healthcare platforms, imaging systems (DICOM), and intelligent solar energy solutions</strong> — from EMR and cloud PACS to solar IoT monitoring and HIPAA/ISO compliant infrastructure.
     </div>
     <div class="hero-quote">
-      <strong>“Technology in healthcare should be invisible, reliable, and always secure.”</strong>
-      <span class="author"><i class="fas fa-quote-left"></i> Building systems that clinicians trust</span>
+      <strong>“Smarter healthcare needs reliable power, connected data, and intelligent systems.”</strong>
+      <span class="author"><i class="fas fa-quote-left"></i> Integrating clean energy with clinical excellence</span>
     </div>
     <div class="hero-badges">
       <a href="https://x.com/technologist36" target="_blank" class="hero-badge"><i class="fab fa-twitter"></i> @technologist36</a>
@@ -422,19 +431,19 @@
       <h2 class="section-title"><i class="fas fa-user-md"></i> About</h2>
       <div class="about-grid">
         <div class="about-text">
-          <p>I'm a <strong>Healthcare Technology Architect</strong> and <strong>Medical IoT Engineer</strong> with a background in electrical engineering. I build <strong>EMR software</strong>, <strong>DICOM / PACS systems</strong>, and <strong>connected medical devices</strong>.</p>
-          <p>As CTO at <strong>Povacare</strong>, I architect Electronic Medical Records software for modern healthcare. I also design <strong>cloud-based DICOM viewers</strong>, <strong>medical imaging pipelines</strong>, and <strong>IoT sensors</strong> for patient monitoring and clinical workflows.</p>
-          <p>I specialize in <strong>HIPAA, CMMC, NIST, SOC 2, and ISO 27001</strong> compliance — building healthcare systems that pass audits with confidence.</p>
+          <p>I'm a <strong>Healthcare Technology Architect</strong>, <strong>Medical IoT Engineer</strong>, and <strong>Clean Energy Systems Designer</strong> with a background in electrical engineering. I build <strong>EMR software</strong>, <strong>DICOM / PACS systems</strong>, <strong>connected medical devices</strong>, and <strong>intelligent solar energy solutions</strong> for healthcare facilities.</p>
+          <p>As CTO at <strong>Povacare</strong>, I architect Electronic Medical Records software, cloud-based DICOM viewers, IoT sensors for patient monitoring, and solar energy systems with real-time IoT monitoring for reliable, off-grid power.</p>
+          <p>I specialize in <strong>HIPAA, CMMC, NIST, SOC 2, ISO 27001, and ISO 13485</strong> compliance — building healthcare systems that pass audits with confidence.</p>
         </div>
         <ul class="focus-list">
           <li><i class="fas fa-check"></i> EMR &amp; HealthTech</li>
           <li><i class="fas fa-check"></i> DICOM &amp; Cloud PACS</li>
-          <li><i class="fas fa-check"></i> Medical IoT (ESP32, sensors)</li>
+          <li><i class="fas fa-check"></i> Medical IoT (ESP32, Zephyr)</li>
+          <li><i class="fas fa-solar-panel"></i> Solar Energy + IoT Monitoring</li>
+          <li><i class="fas fa-check"></i> HIPAA · CMMC · NIST · SOC 2 · ISO</li>
           <li><i class="fas fa-check"></i> Web DICOM Viewers</li>
-          <li><i class="fas fa-check"></i> Healthcare Compliance</li>
           <li><i class="fas fa-check"></i> Clinical Data Integration</li>
-          <li><i class="fas fa-check"></i> Secure Medical Apps</li>
-          <li><i class="fas fa-check"></i> AWS for Healthcare</li>
+          <li><i class="fas fa-check"></i> AWS Healthcare Architecture</li>
         </ul>
       </div>
     </section>
@@ -448,11 +457,14 @@
         <span class="skill-tag">Medical IoT</span>
         <span class="skill-tag">ESP32</span>
         <span class="skill-tag">Zephyr OS</span>
+        <span class="skill-tag solar-skill">Solar Energy Systems</span>
+        <span class="skill-tag solar-skill">Solar IoT Monitoring</span>
         <span class="skill-tag">HIPAA</span>
         <span class="skill-tag">CMMC</span>
         <span class="skill-tag">NIST 800-53</span>
         <span class="skill-tag">SOC 2</span>
         <span class="skill-tag">ISO 27001</span>
+        <span class="skill-tag">ISO 13485</span>
         <span class="skill-tag">Web DICOM Viewer</span>
         <span class="skill-tag">Cloud PACS</span>
         <span class="skill-tag">Python</span>
@@ -461,11 +473,8 @@
         <span class="skill-tag">Node.js</span>
         <span class="skill-tag">AWS</span>
         <span class="skill-tag">Docker</span>
-        <span class="skill-tag">CI/CD</span>
         <span class="skill-tag">Embedded Systems</span>
-        <span class="skill-tag">Sensor Integration</span>
-        <span class="skill-tag">FHIR</span>
-        <span class="skill-tag">HL7</span>
+        <span class="skill-tag">FHIR · HL7</span>
         <span class="skill-tag">PACS Servers</span>
       </div>
     </section>
@@ -473,16 +482,17 @@
     <section id="services">
       <h2 class="section-title"><i class="fas fa-concierge-bell"></i> Services</h2>
       <div class="services-grid">
-        <span class="service-tag">✔ EMR / EHR Software Development</span>
-        <span class="service-tag">✔ DICOM &amp; Cloud PACS Solutions</span>
-        <span class="service-tag">✔ Medical IoT (ESP32, Zephyr, sensors)</span>
-        <span class="service-tag">✔ Web DICOM Viewers (React + Django)</span>
-        <span class="service-tag">✔ Healthcare Compliance (HIPAA, CMMC, NIST, SOC 2, ISO 27001)</span>
-        <span class="service-tag">✔ Clinical Data Integration (FHIR, HL7)</span>
-        <span class="service-tag">✔ Telemedicine &amp; Remote Monitoring</span>
-        <span class="service-tag">✔ Secure Medical App Development</span>
-        <span class="service-tag">✔ AWS Healthcare Architecture</span>
-        <span class="service-tag">✔ Embedded Systems for Medical Devices</span>
+        <span class="service-tag health-tag">✔ EMR / EHR Software Development</span>
+        <span class="service-tag health-tag">✔ DICOM &amp; Cloud PACS Solutions</span>
+        <span class="service-tag health-tag">✔ Medical IoT (ESP32, Zephyr, sensors)</span>
+        <span class="service-tag health-tag">✔ Web DICOM Viewers (React + Django)</span>
+        <span class="service-tag solar-tag">✔ Solar Energy Systems + IoT Monitoring</span>
+        <span class="service-tag solar-tag">✔ Smart Energy Analytics &amp; Alerts</span>
+        <span class="service-tag health-tag">✔ Healthcare Compliance (HIPAA, CMMC, NIST, SOC 2, ISO 27001, ISO 13485)</span>
+        <span class="service-tag health-tag">✔ Clinical Data Integration (FHIR, HL7)</span>
+        <span class="service-tag health-tag">✔ Telemedicine &amp; Remote Monitoring</span>
+        <span class="service-tag health-tag">✔ AWS Healthcare Architecture</span>
+        <span class="service-tag health-tag">✔ Embedded Systems for Medical Devices</span>
       </div>
     </section>
 
@@ -503,43 +513,44 @@
           <span class="status dev">● In Development</span>
         </div>
         <div class="project-card">
+          <span class="tag solar-tag">Solar + IoT</span>
+          <h3>Solar Energy System with IoT Monitoring</h3>
+          <p>Intelligent solar energy solution with IoT monitoring for healthcare facilities. Real-time energy tracking, consumption analytics, and smart alerts.</p>
+          <span class="status dev">● In Development</span>
+        </div>
+        <div class="project-card">
           <span class="tag iot">Medical IoT</span>
           <h3>ESP32 Patient Monitor (Zephyr OS)</h3>
           <p>ESP32-based patient monitoring system with temperature, heart rate, and oxygen sensors. Secure data transmission to cloud EMR.</p>
           <span class="status dev">● In Development</span>
         </div>
         <div class="project-card">
-          <span class="tag">Healthcare</span>
-          <h3>Telemedicine Platform</h3>
-          <p>Secure telemedicine app with video consultation, EMR integration, and remote patient monitoring.</p>
-          <span class="status soon">● Coming Soon</span>
-        </div>
-        <div class="project-card">
-          <span class="tag iot">Medical IoT</span>
-          <h3>Wearable Health Sensor</h3>
-          <p>Wearable device with ECG, SpO2, and activity tracking. Data streaming to clinical dashboard.</p>
+          <span class="tag solar-tag">Clean Energy</span>
+          <h3>Solar IoT Monitoring Dashboard</h3>
+          <p>Real-time dashboard for solar energy performance, battery health, and predictive maintenance alerts for healthcare facilities.</p>
           <span class="status soon">● Coming Soon</span>
         </div>
         <div class="project-card">
           <span class="tag">Compliance</span>
-          <h3>HIPAA Audit Toolkit</h3>
-          <p>Automated compliance toolkit for healthcare apps — HIPAA, NIST, and SOC 2 readiness.</p>
+          <h3>HIPAA + ISO Audit Toolkit</h3>
+          <p>Automated compliance toolkit for healthcare apps — HIPAA, NIST, SOC 2, and ISO 13485 readiness.</p>
           <span class="status soon">● Coming Soon</span>
         </div>
       </div>
     </section>
 
     <section id="techstack">
-      <h2 class="section-title"><i class="fas fa-layer-group"></i> Healthcare Tech Stack</h2>
+      <h2 class="section-title"><i class="fas fa-layer-group"></i> Healthcare &amp; Energy Tech Stack</h2>
       <div class="tech-grid">
         <div class="tech-item"><span>EMR</span> <span class="value">Povacare</span></div>
         <div class="tech-item"><span>DICOM / PACS</span> <span class="value">Orthanc, dcm4che, OHIF</span></div>
         <div class="tech-item"><span>Medical IoT</span> <span class="value">ESP32, Zephyr OS, BLE</span></div>
+        <div class="tech-item"><span>Solar Energy</span> <span class="value">IoT Monitoring, Analytics, Alerts</span></div>
         <div class="tech-item"><span>Languages</span> <span class="value">Python, Node.js</span></div>
         <div class="tech-item"><span>Frameworks</span> <span class="value">Django, React</span></div>
-        <div class="tech-item"><span>Cloud</span> <span class="value">AWS (S3, EC2, Lambda)</span></div>
+        <div class="tech-item"><span>Cloud</span> <span class="value">AWS (S3, EC2, Lambda, IoT Core)</span></div>
         <div class="tech-item"><span>Web DICOM</span> <span class="value">React, Cornerstone.js</span></div>
-        <div class="tech-item"><span>Compliance</span> <span class="value">HIPAA, CMMC, NIST, SOC 2</span></div>
+        <div class="tech-item"><span>Compliance</span> <span class="value">HIPAA, CMMC, NIST, SOC 2, ISO 27001, ISO 13485</span></div>
         <div class="tech-item"><span>Integration</span> <span class="value">FHIR, HL7, Mirth</span></div>
         <div class="tech-item"><span>DevOps</span> <span class="value">Docker, CI/CD, Kubernetes</span></div>
       </div>
@@ -559,7 +570,7 @@
   </div>
 
   <footer class="footer container">
-    <p>© 2026 Waithaka Munako · <span>Healthcare · DICOM · Medical IoT</span> · Kenya</p>
+    <p>© 2026 Waithaka Munako · <span>Healthcare · Solar · DICOM · EMR</span> · Kenya</p>
   </footer>
 </main>
 
